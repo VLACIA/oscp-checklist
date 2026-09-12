@@ -8,23 +8,43 @@
         "type": "tabs",
         "children": [
           {
-            "id": "847d52345dcebe57",
+            "id": "37a76ef0bb9300a2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "Standalone-Box.canvas",
+                "viewState": {
+                  "x": 289.49196118918934,
+                  "y": -161.85140423867875,
+                  "zoom": 0.31026759625881506
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-layout-dashboard",
+              "title": "Standalone-Box"
+            }
+          },
+          {
+            "id": "316035777c1c5747",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Standalone Box Method.canvas",
+                "file": "Standalone-Box.canvas",
                 "viewState": {
-                  "x": 973.8438735240485,
-                  "y": 4360.870951027496,
-                  "zoom": -0.13417678036878744
+                  "x": -242.5078152277921,
+                  "y": 304.4383280901118,
+                  "zoom": -2.5786211569963915
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "Standalone Box Method"
+              "title": "Standalone-Box"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,10 +246,18 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "847d52345dcebe57",
+  "active": "316035777c1c5747",
   "lastOpenFiles": [
+    "File Transfer.canvas",
+    "Standalone-Box.canvas",
+    "StandAloneBoxes",
+    "Definitions/Shell & upgrade/Intro.md",
+    "Definitions/Shell & upgrade/Reverse Shell One-Liners.md",
+    "Definitions/Shell & upgrade/Shell Upgrade — Linux TTY.md",
+    "Definitions/Shell & upgrade",
+    "ActiveDirectory.canvas",
+    "README.md",
     "Common CVEs & Exploits.canvas",
-    "Standalone Box Method.canvas",
     "imgs/windows-vs-linux.png",
     "Definitions/Windows vs. Linux.md",
     "File Transfer/Intro.md",
@@ -240,7 +268,7 @@
     "Shell & upgrade/Intro.md",
     "imgs/reverse_shell.png",
     "Enumeration-stand-alone/Web enum.md",
-    "Standalone Linux Box Methodology/Linux Privilege Escalation/Decision Tree.md",
+    "StandAloneBoxes/Standalone Linux Box Methodology/Linux Privilege Escalation/Decision Tree.md",
     "Enumeration-stand-alone/nmap.md",
     "Enumeration-stand-alone/Plan.md",
     "General-Enum-workflow.canvas",
@@ -253,23 +281,16 @@
     "Defs/Basic.md",
     "Defs",
     "Active Directory/Attack-Phases/Phase3-FOOTHOLD on MS01.md",
-    "ActiveDirectory.canvas",
-    "README.md",
-    "Standalone Linux Box Methodology/Plan-standalone-linux.md",
+    "StandAloneBoxes/Standalone Linux Box Methodology/Plan-standalone-linux.md",
     "Untitled.md",
     "StandAlone",
     "Active Directory/Attack-Phases/Phase4-Pivot to MS02/mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access).md",
-    "Common CVEs & Exploits/Searchsploit.md",
+    "Definitions/Common CVEs & Exploits/Searchsploit.md",
     "LICENSE",
-    "Common CVEs & Exploits/ZeroLogon and noPac.md",
-    "Common CVEs & Exploits/CVEs.md",
-    "Common CVEs & Exploits/Intro.md",
-    "Common CVEs & Exploits",
+    "Definitions/Common CVEs & Exploits",
     "Shell & upgrade",
     "File Transfer",
     "Definitions/Password Attacks",
-    "Active Directory/Pivoting-tunneling",
-    "Active Directory/MSSQL — RCE & Lateral Movement",
     "FlowChartSummary.canvas",
     "Untitled 1.canvas",
     "Pasted image 20260911194836.png"

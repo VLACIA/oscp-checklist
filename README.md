@@ -10,7 +10,7 @@ An Obsidian-based reference vault for working through OSCP-style standalone mach
 1. Clone or download this repository.
 2. Open the repository folder as a vault in [Obsidian](https://obsidian.md/).
 3. Begin with one of the visual maps:
-   - [`Standalone Box Method.canvas`](./Standalone%20Box%20Method.canvas) for Linux and Windows standalone targets.
+   - [`Standalone Box Method.canvas`](Standalone-Box.canvas) for Linux and Windows standalone targets.
    - [`ActiveDirectory.canvas`](./ActiveDirectory.canvas) for Active Directory attack paths.
 4. Follow the linked notes, replacing placeholders such as `<TARGET_IP>`, `<LHOST>`, usernames, domains, and ports with values from your lab.
 
@@ -21,8 +21,8 @@ The Markdown files can also be read directly on GitHub, but Obsidian provides th
 | Area | What it covers |
 | --- | --- |
 | [Enumeration](./Enumeration-stand-alone/Plan.md) | Full-port scanning, Nmap, web, SMB, SNMP, and port-to-action references |
-| [Standalone Linux](./Standalone%20Linux%20Box%20Methodology/Plan-standalone-linux.md) | Initial access, common web attack methods, attack chains, and Linux privilege escalation |
-| [Standalone Windows](./Standalone%20Win%20Box%20Methodology/Initial%20Access.md) | Windows footholds, credential dumping, token privileges, and privilege escalation |
+| [Standalone Linux](Plan-standalone-linux.md) | Initial access, common web attack methods, attack chains, and Linux privilege escalation |
+| [Standalone Windows](Initial%20Access.md) | Windows footholds, credential dumping, token privileges, and privilege escalation |
 | [Active Directory](./Active%20Directory/intro.md) | Enumeration, footholds, credential attacks, AD CS, lateral movement, persistence, MSSQL, and pivoting |
 | [Password attacks](./Definitions/Password%20Attacks/Intro.md) | Hash identification, offline cracking, online brute force, NTLM capture, and relay |
 | [Common CVEs and exploits](./Common%20CVEs%20%26%20Exploits/Intro.md) | Exploit research, Searchsploit, and frequently encountered vulnerabilities |

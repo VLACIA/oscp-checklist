@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"title","type":"text","text":"# File Transfer\n\nChoose the direction of transfer, then open the corresponding note.","x":-260,"y":-470,"width":520,"height":140,"color":"3"},
+		{"id":"intro","type":"text","text":"[[File Transfer/Intro|File Transfer — Overview]]","x":-210,"y":-230,"width":420,"height":100,"color":"3"},
+		{"id":"decision","type":"text","text":"## Select the source and destination","x":-210,"y":-30,"width":420,"height":100,"color":"5"},
+		{"id":"linux-linux-group","type":"group","x":-950,"y":210,"width":560,"height":300,"color":"4","label":"Linux → Linux"},
+		{"id":"linux-windows-group","type":"group","x":-280,"y":210,"width":560,"height":300,"color":"1","label":"Linux → Windows"},
+		{"id":"windows-linux-group","type":"group","x":390,"y":210,"width":560,"height":300,"color":"6","label":"Windows → Linux · Exfiltration"},
+		{"id":"linux-linux","type":"text","text":"[[File Transfer/Linux → Linux|Linux → Linux Transfer Methods]]","x":-890,"y":310,"width":440,"height":100,"color":"4"},
+		{"id":"linux-windows","type":"text","text":"[[File Transfer/Linux → Windows|Linux → Windows Transfer Methods]]","x":-220,"y":310,"width":440,"height":100,"color":"1"},
+		{"id":"windows-linux","type":"text","text":"[[File Transfer/Windows → Linux (Exfil)|Windows → Linux Exfiltration Methods]]","x":450,"y":310,"width":440,"height":100,"color":"6"}
+	],
+	"edges":[
+		{"id":"title-intro","fromNode":"title","toNode":"intro","fromSide":"bottom","toSide":"top","color":"3"},
+		{"id":"intro-decision","fromNode":"intro","toNode":"decision","fromSide":"bottom","toSide":"top","color":"3"},
+		{"id":"decision-linux-linux","fromNode":"decision","toNode":"linux-linux","fromSide":"left","toSide":"top","label":"Linux target","color":"4"},
+		{"id":"decision-linux-windows","fromNode":"decision","toNode":"linux-windows","fromSide":"bottom","toSide":"top","label":"Windows target","color":"1"},
+		{"id":"decision-windows-linux","fromNode":"decision","toNode":"windows-linux","fromSide":"right","toSide":"top","label":"Exfiltrate","color":"6"}
+	]
+}
