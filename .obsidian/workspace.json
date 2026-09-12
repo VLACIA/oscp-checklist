@@ -8,33 +8,23 @@
         "type": "tabs",
         "children": [
           {
-            "id": "0bbb573df8a3e860",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "imgs/windows-vs-linux.png"
-              },
-              "icon": "lucide-image",
-              "title": "windows-vs-linux"
-            }
-          },
-          {
             "id": "847d52345dcebe57",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Definitions/Windows vs. Linux.md",
-                "mode": "source",
-                "source": false
+                "file": "Standalone Box Method.canvas",
+                "viewState": {
+                  "x": 973.8438735240485,
+                  "y": 4360.870951027496,
+                  "zoom": -0.13417678036878744
+                }
               },
-              "icon": "lucide-file",
-              "title": "Windows vs. Linux"
+              "icon": "lucide-layout-dashboard",
+              "title": "Standalone Box Method"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -238,13 +228,15 @@
   },
   "active": "847d52345dcebe57",
   "lastOpenFiles": [
-    "File Transfer/Intro.md",
+    "Common CVEs & Exploits.canvas",
     "Standalone Box Method.canvas",
+    "imgs/windows-vs-linux.png",
+    "Definitions/Windows vs. Linux.md",
+    "File Transfer/Intro.md",
     "Password Attacks.canvas",
     "Shell & upgrade/Shell Upgrade — Linux TTY.md",
     "Shell & upgrade/Reverse Shell One-Liners.md",
     "Definitions/What is Reverse Shell.md",
-    "imgs/windows-vs-linux.png",
     "Shell & upgrade/Intro.md",
     "imgs/reverse_shell.png",
     "Enumeration-stand-alone/Web enum.md",
@@ -252,7 +244,6 @@
     "Enumeration-stand-alone/nmap.md",
     "Enumeration-stand-alone/Plan.md",
     "General-Enum-workflow.canvas",
-    "Definitions/Windows vs. Linux.md",
     "Definitions/Linux-File-Permission.md",
     "Definitions/Basic.md",
     "Definitions",
@@ -274,7 +265,6 @@
     "Common CVEs & Exploits/CVEs.md",
     "Common CVEs & Exploits/Intro.md",
     "Common CVEs & Exploits",
-    "File Transfer/Linux → Linux.md",
     "Shell & upgrade",
     "File Transfer",
     "Definitions/Password Attacks",
