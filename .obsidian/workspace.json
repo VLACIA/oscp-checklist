@@ -4,21 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "0a82d6fc61b1cb63",
+        "id": "fd9b34d45a2937fd",
         "type": "tabs",
         "children": [
           {
-            "id": "fa25ed75bee48d94",
+            "id": "0bbb573df8a3e860",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "Active Directory/Attack-Phases/Phase4-Pivot to MS02/mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access).md",
-                "mode": "source",
-                "source": false
+                "file": "General-Enum-workflow.canvas",
+                "viewState": {
+                  "x": -538,
+                  "y": -320,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
-              "title": "mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access)"
+              "icon": "lucide-layout-dashboard",
+              "title": "General-Enum-workflow"
             }
           }
         ]
@@ -223,10 +226,18 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "fa25ed75bee48d94",
+  "active": "0bbb573df8a3e860",
   "lastOpenFiles": [
+    "Standalone Box Method.canvas",
+    "Shell & upgrade/Intro.md",
+    "General-Enum-workflow.canvas",
+    "Active Directory/Attack-Phases/Phase3-FOOTHOLD on MS01.md",
     "ActiveDirectory.canvas",
     "README.md",
+    "Standalone Linux Box Methodology/Plan-standalone-linux.md",
+    "Untitled.md",
+    "StandAlone",
+    "Active Directory/Attack-Phases/Phase4-Pivot to MS02/mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access).md",
     "Common CVEs & Exploits/Searchsploit.md",
     "LICENSE",
     "Common CVEs & Exploits/ZeroLogon and noPac.md",
@@ -235,7 +246,6 @@
     "Shell & upgrade/Shell Upgrade — Linux TTY.md",
     "Common CVEs & Exploits",
     "Shell & upgrade/Reverse Shell One-Liners.md",
-    "Shell & upgrade/Intro.md",
     "File Transfer/Linux → Linux.md",
     "Shell & upgrade",
     "File Transfer/Windows → Linux (Exfil).md",
@@ -252,17 +262,10 @@
     "Active Directory/Pivoting-tunneling/Chisel.md",
     "Active Directory/Pivoting-tunneling/Plink (Windows — no SSH client).md",
     "Active Directory/Pivoting-tunneling/Ligolo-ng Double Pivot (MS01 → MS02 → MS03).md",
-    "Active Directory/Pivoting-tunneling/Ligolo-ng.md",
-    "Active Directory/Pivoting-tunneling/Intro.md",
-    "Active Directory/MSSQL — RCE & Lateral Movement/MSSQL Attack Decision Tree.md",
     "Active Directory/Pivoting-tunneling",
-    "Active Directory/MSSQL — RCE & Lateral Movement/Step 6 UNC Path Injection → Hash Capture.md",
     "Active Directory/MSSQL — RCE & Lateral Movement",
     "Active Directory/Attack-Phases/Phase4-Pivot to MS02",
     "Active Directory/Attack-Phases/Phase-2-3",
-    "Active Directory/Attack-Phases",
-    "General-Enum-workflow.canvas",
-    "Standalone Box Method.canvas",
     "FlowChartSummary.canvas",
     "Untitled 1.canvas",
     "imgs/windows-vs-linux.png",
