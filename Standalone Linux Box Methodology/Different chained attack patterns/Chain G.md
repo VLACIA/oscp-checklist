@@ -1,0 +1,1 @@
+Chain G — FTP Anon Write + Webroot Overlap → Shell FTP anonymous login → writable dir = /var/www/html/uploads → upload PHP shell → trigger via browser → www-data → capabilities/cron → ROOT

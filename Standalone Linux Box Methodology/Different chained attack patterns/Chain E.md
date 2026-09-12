@@ -1,0 +1,1 @@
+Chain E — LFI + PHP Filter → DB Creds → SQLi File Write → RCE LFI + php://filter → base64 decode config.php → DB creds → SQLi UNION INTO OUTFILE → webshell → shell → privesc

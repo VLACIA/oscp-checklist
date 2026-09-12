@@ -1,0 +1,20 @@
+{
+	"nodes":[
+		{"id":"818bd2a62addbb4e","type":"text","text":"[[Priviledge-Lateral-Movement]]","x":-260,"y":-140,"width":250,"height":60},
+		{"id":"24643d2ca3d94e3c","type":"text","text":"[[After-escalation-before-movement]]","x":300,"y":-140,"width":250,"height":60},
+		{"id":"5ca04a1494e12bcf","type":"text","text":"[[Win-MS01]]","x":67,"y":-240,"width":133,"height":60},
+		{"id":"04f4e08b2961729a","type":"text","text":"[[Linux-MS01]]","x":67,"y":-60,"width":144,"height":60},
+		{"id":"3829b56acb70d065","type":"text","text":"[[Attack Flow]]","x":600,"y":-140,"width":146,"height":60},
+		{"id":"57147e09ace04b64","type":"text","text":"Active Directory","x":-720,"y":-140,"width":160,"height":60},
+		{"id":"95bf7c1bca1dc9c3","type":"text","text":"[[Active Directory/intro]]","x":-480,"y":-150,"width":180,"height":80}
+	],
+	"edges":[
+		{"id":"b156e7b390bfed13","fromNode":"57147e09ace04b64","fromSide":"right","toNode":"95bf7c1bca1dc9c3","toSide":"left"},
+		{"id":"48f2d14446d4216b","fromNode":"95bf7c1bca1dc9c3","fromSide":"right","toNode":"818bd2a62addbb4e","toSide":"left"},
+		{"id":"ceb3a3802f9b3a5e","fromNode":"818bd2a62addbb4e","fromSide":"right","toNode":"5ca04a1494e12bcf","toSide":"left"},
+		{"id":"7e8c5ba75d3c76da","fromNode":"818bd2a62addbb4e","fromSide":"right","toNode":"04f4e08b2961729a","toSide":"left"},
+		{"id":"88aa15fc45b4316d","fromNode":"5ca04a1494e12bcf","fromSide":"right","toNode":"24643d2ca3d94e3c","toSide":"left"},
+		{"id":"b7130635985a7f91","fromNode":"04f4e08b2961729a","fromSide":"right","toNode":"24643d2ca3d94e3c","toSide":"left"},
+		{"id":"dea2b6dd27b24610","fromNode":"24643d2ca3d94e3c","fromSide":"right","toNode":"3829b56acb70d065","toSide":"left"}
+	]
+}

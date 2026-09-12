@@ -1,0 +1,3 @@
+**A reverse shell makes the _target_ connect back to _you_.** You start a listener on Kali (`nc -lvnp 4444`), then trick the target into running a one-liner that dials home to your IP and port. This works even through firewalls, which is why it's the default — a _bind_ shell (where you connect to the target) usually gets blocked by inbound filtering.
+
+**Always upgrade your shell.** The first shell you get is "dumb" — no arrow keys, no tab-complete, and Ctrl-C kills it. Upgrading to a full TTY (the `python3 pty` trick below) makes it behave like a real terminal so you can use `sudo`, text editors, and SSH. _Do this immediately every time._

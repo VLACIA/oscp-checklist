@@ -1,0 +1,1 @@
+Chain D — Web Login → File Upload → Webshell → Cron Root Default creds (admin:admin) → file upload → bypass (phar/phtml) → webshell as www-data → /etc/crontab writable script → ROOT

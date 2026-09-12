@@ -1,0 +1,1 @@
+Chain F — .git Exposed → Deleted Creds → SSH → sudo /.git/HEAD accessible → git-dumper → git log/diff → password found in old commit → SSH login → sudo privesc → ROOT

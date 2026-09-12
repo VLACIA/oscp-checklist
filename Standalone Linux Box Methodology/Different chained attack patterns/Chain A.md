@@ -1,0 +1,1 @@
+Chain A — Web Version CVE → Cred → Privesc Apache/Nginx/App version found → searchsploit → RCE as www-data → config.php has DB creds → reuse creds for SSH → sudo -l → ROOT

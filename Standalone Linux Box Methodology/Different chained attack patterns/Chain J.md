@@ -1,0 +1,1 @@
+Chain J — SQLi → OS Shell (MSSQL/MySQL) SQLi on login form → xp_cmdshell (MSSQL) or UDF (MySQL) → RCE as service account → SeImpersonate → SYSTEM

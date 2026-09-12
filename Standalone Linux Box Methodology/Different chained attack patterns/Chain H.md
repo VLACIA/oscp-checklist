@@ -1,0 +1,1 @@
+Chain H — SNMP Community → Username → Password Spray → RCE snmpwalk → running process with username / installed software version → username found → spray common passwords → SSH/WinRM → SeImpersonate or SUID → ROOT

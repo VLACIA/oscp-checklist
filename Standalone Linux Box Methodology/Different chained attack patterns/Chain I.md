@@ -1,0 +1,1 @@
+Chain I — Username as Password (Very Common in OSCP) Any service leaks username (SMTP enum, SNMP, web, SMB) → try username:username, username:username123, username:Company1 → login → privesc

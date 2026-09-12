@@ -1,0 +1,1 @@
+Chain B — Anonymous SMB → Creds → RCE SMB null session → readable share → config/pdf/xlsx file → creds found → SSH/WinRM login → SUID/SeImpersonate → ROOT

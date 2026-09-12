@@ -1,0 +1,273 @@
+{
+  "main": {
+    "id": "f8cf9d7cb5657302",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a82d6fc61b1cb63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa25ed75bee48d94",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Common CVEs & Exploits/Searchsploit.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Searchsploit"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "42a2fb6ecdbe1baf",
+    "type": "split",
+    "children": [
+      {
+        "id": "56f161a1a2e671ce",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e5c1911aac73dba5",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "aed32b53b68cfadf",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "cb23add3bb4c6a80",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 338.5
+  },
+  "right": {
+    "id": "b476833009299ce4",
+    "type": "split",
+    "children": [
+      {
+        "id": "765d6ae31eb8e593",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "30266e7583e8db1c",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
+            "id": "2c9409e3f36d5d3c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "48b1186fbf2e489c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Enumeration/What is Enumeration.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "25b5f0717a607f8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Basic-Explanation/Linux-File-Permission.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linux-File-Permission"
+            }
+          },
+          {
+            "id": "2e30d295f85f278e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Enumeration/What is Enumeration.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "3a19531b533b7e97",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "795e71de5d235ed0",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "eb06b2219e183677",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Standalone Windows Box Method.md",
+                "followCursor": true,
+                "showSearch": true,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 580.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false
+    }
+  },
+  "active": "e5c1911aac73dba5",
+  "lastOpenFiles": [
+    "README.md",
+    "LICENSE",
+    "Common CVEs & Exploits/ZeroLogon and noPac.md",
+    "Common CVEs & Exploits/Searchsploit.md",
+    "Common CVEs & Exploits/CVEs.md",
+    "Common CVEs & Exploits/Intro.md",
+    "Shell & upgrade/Shell Upgrade — Linux TTY.md",
+    "Common CVEs & Exploits",
+    "Shell & upgrade/Reverse Shell One-Liners.md",
+    "Shell & upgrade/Intro.md",
+    "File Transfer/Linux → Linux.md",
+    "Shell & upgrade",
+    "File Transfer/Windows → Linux (Exfil).md",
+    "File Transfer/Linux → Windows.md",
+    "File Transfer/Intro.md",
+    "Password Attacks/Online Brute Force.md",
+    "File Transfer",
+    "Basic-Explanation/File Transfer.md",
+    "Password Attacks/NTLM Capture & Relay.md",
+    "Password Attacks/Hash Mode Reference.md",
+    "Password Attacks/Intro.md",
+    "ActiveDirectory.canvas",
+    "Password Attacks",
+    "Active Directory/Pivoting-tunneling/SSH Tunneling.md",
+    "Active Directory/Pivoting-tunneling/Chisel.md",
+    "Active Directory/Pivoting-tunneling/Plink (Windows — no SSH client).md",
+    "Active Directory/Pivoting-tunneling/Ligolo-ng Double Pivot (MS01 → MS02 → MS03).md",
+    "Active Directory/Pivoting-tunneling/Ligolo-ng.md",
+    "Active Directory/Pivoting-tunneling/Intro.md",
+    "Active Directory/MSSQL — RCE & Lateral Movement/MSSQL Attack Decision Tree.md",
+    "Active Directory/Pivoting-tunneling",
+    "Active Directory/MSSQL — RCE & Lateral Movement/Step 6 UNC Path Injection → Hash Capture.md",
+    "Active Directory/MSSQL — RCE & Lateral Movement/Step 5 Linked Server Lateral Movement.md",
+    "Active Directory/MSSQL — RCE & Lateral Movement",
+    "Active Directory/Attack-Phases/Phase4-Pivot to MS02",
+    "Active Directory/Attack-Phases/Phase-2-3",
+    "Active Directory/Attack-Phases",
+    "General-Enum-workflow.canvas",
+    "Standalone Box Method.canvas",
+    "FlowChartSummary.canvas",
+    "Untitled 1.canvas",
+    "imgs/windows-vs-linux.png",
+    "imgs/reverse_shell.png",
+    "Pasted image 20260911194836.png"
+  ]
+}
