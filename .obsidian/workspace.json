@@ -16,35 +16,17 @@
               "state": {
                 "file": "Standalone-Box.canvas",
                 "viewState": {
-                  "x": 289.49196118918934,
-                  "y": -161.85140423867875,
-                  "zoom": 0.31026759625881506
+                  "x": 1145.9965361348331,
+                  "y": 2415.3800418600454,
+                  "zoom": -3.111111145019531
                 }
               },
               "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "Standalone-Box"
             }
-          },
-          {
-            "id": "316035777c1c5747",
-            "type": "leaf",
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Standalone-Box.canvas",
-                "viewState": {
-                  "x": -242.5078152277921,
-                  "y": 304.4383280901118,
-                  "zoom": -2.5786211569963915
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "Standalone-Box"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -246,51 +228,51 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "316035777c1c5747",
+  "active": "37a76ef0bb9300a2",
   "lastOpenFiles": [
     "File Transfer.canvas",
     "Standalone-Box.canvas",
+    "Basics/Shell & upgrade/Intro.md",
+    "Basics/Shell & upgrade/Shell Upgrade — Linux TTY.md",
+    "Basics/Shell & upgrade/Reverse Shell One-Liners.md",
+    "Basics/Password Attacks/Online Brute Force.md",
+    "Basics/File Transfer/Windows → Linux (Exfil).md",
+    "Basics/Password Attacks/Intro.md",
+    "Basics/Password Attacks/NTLM Capture & Relay.md",
+    "Basics/Password Attacks/Hash Mode Reference.md",
+    "Basics/File Transfer/Linux → Windows.md",
+    "Basics/File Transfer/Intro.md",
+    "Basics/File Transfer/Linux → Linux.md",
+    "Basics/Common CVEs & Exploits/CVEs.md",
+    "Basics/Common CVEs & Exploits/Searchsploit.md",
+    "Basics/Common CVEs & Exploits/ZeroLogon and noPac.md",
+    "Basics/Common CVEs & Exploits/Intro.md",
+    "Basics/Windows vs. Linux.md",
+    "Basics/Shell & upgrade",
+    "Basics/Password Attacks",
+    "Basics/Linux-File-Permission.md",
+    "Basics/File Transfer",
+    "Basics/Common CVEs & Exploits",
+    "Basics/Basic.md",
+    "Basics",
+    "Definitions/File Transfer/Windows → Linux (Exfil).md",
+    "Definitions/File Transfer/Linux → Windows.md",
+    "Definitions/File Transfer/Linux → Linux.md",
+    "Definitions/File Transfer/Intro.md",
+    "Definitions/File Transfer",
     "StandAloneBoxes",
     "Definitions/Shell & upgrade/Intro.md",
     "Definitions/Shell & upgrade/Reverse Shell One-Liners.md",
     "Definitions/Shell & upgrade/Shell Upgrade — Linux TTY.md",
     "Definitions/Shell & upgrade",
     "ActiveDirectory.canvas",
-    "README.md",
     "Common CVEs & Exploits.canvas",
     "imgs/windows-vs-linux.png",
-    "Definitions/Windows vs. Linux.md",
-    "File Transfer/Intro.md",
     "Password Attacks.canvas",
-    "Shell & upgrade/Shell Upgrade — Linux TTY.md",
-    "Shell & upgrade/Reverse Shell One-Liners.md",
-    "Definitions/What is Reverse Shell.md",
-    "Shell & upgrade/Intro.md",
     "imgs/reverse_shell.png",
-    "Enumeration-stand-alone/Web enum.md",
-    "StandAloneBoxes/Standalone Linux Box Methodology/Linux Privilege Escalation/Decision Tree.md",
-    "Enumeration-stand-alone/nmap.md",
-    "Enumeration-stand-alone/Plan.md",
     "General-Enum-workflow.canvas",
-    "Definitions/Linux-File-Permission.md",
-    "Definitions/Basic.md",
     "Definitions",
-    "Defs/Windows vs. Linux.md",
-    "Defs/What is Reverse Shell.md",
-    "Defs/Linux-File-Permission.md",
-    "Defs/Basic.md",
     "Defs",
-    "Active Directory/Attack-Phases/Phase3-FOOTHOLD on MS01.md",
-    "StandAloneBoxes/Standalone Linux Box Methodology/Plan-standalone-linux.md",
-    "Untitled.md",
-    "StandAlone",
-    "Active Directory/Attack-Phases/Phase4-Pivot to MS02/mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access).md",
-    "Definitions/Common CVEs & Exploits/Searchsploit.md",
-    "LICENSE",
-    "Definitions/Common CVEs & Exploits",
-    "Shell & upgrade",
-    "File Transfer",
-    "Definitions/Password Attacks",
     "FlowChartSummary.canvas",
     "Untitled 1.canvas",
     "Pasted image 20260911194836.png"
