@@ -23,17 +23,14 @@
             "id": "847d52345dcebe57",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Standalone Box Method.canvas",
-                "viewState": {
-                  "x": -1097.7366921763773,
-                  "y": 439.1062136998354,
-                  "zoom": -0.1660635558075505
-                }
+                "file": "Definitions/Windows vs. Linux.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Standalone Box Method"
+              "icon": "lucide-file",
+              "title": "Windows vs. Linux"
             }
           }
         ],
@@ -241,10 +238,11 @@
   },
   "active": "847d52345dcebe57",
   "lastOpenFiles": [
+    "File Transfer/Intro.md",
+    "Standalone Box Method.canvas",
     "Password Attacks.canvas",
     "Shell & upgrade/Shell Upgrade — Linux TTY.md",
     "Shell & upgrade/Reverse Shell One-Liners.md",
-    "Standalone Box Method.canvas",
     "Definitions/What is Reverse Shell.md",
     "imgs/windows-vs-linux.png",
     "Shell & upgrade/Intro.md",
@@ -276,9 +274,9 @@
     "Common CVEs & Exploits/CVEs.md",
     "Common CVEs & Exploits/Intro.md",
     "Common CVEs & Exploits",
-    "Definitions/File Transfer/Linux → Linux.md",
+    "File Transfer/Linux → Linux.md",
     "Shell & upgrade",
-    "Definitions/File Transfer",
+    "File Transfer",
     "Definitions/Password Attacks",
     "Active Directory/Pivoting-tunneling",
     "Active Directory/MSSQL — RCE & Lateral Movement",
