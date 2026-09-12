@@ -11,20 +11,33 @@
             "id": "0bbb573df8a3e860",
             "type": "leaf",
             "state": {
+              "type": "image",
+              "state": {
+                "file": "imgs/windows-vs-linux.png"
+              },
+              "icon": "lucide-image",
+              "title": "windows-vs-linux"
+            }
+          },
+          {
+            "id": "847d52345dcebe57",
+            "type": "leaf",
+            "state": {
               "type": "canvas",
               "state": {
-                "file": "General-Enum-workflow.canvas",
+                "file": "Standalone Box Method.canvas",
                 "viewState": {
-                  "x": -538,
-                  "y": -320,
-                  "zoom": 0
+                  "x": -1097.7366921763773,
+                  "y": 439.1062136998354,
+                  "zoom": -0.1660635558075505
                 }
               },
               "icon": "lucide-layout-dashboard",
-              "title": "General-Enum-workflow"
+              "title": "Standalone Box Method"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -226,11 +239,30 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "0bbb573df8a3e860",
+  "active": "847d52345dcebe57",
   "lastOpenFiles": [
+    "Password Attacks.canvas",
+    "Shell & upgrade/Shell Upgrade — Linux TTY.md",
+    "Shell & upgrade/Reverse Shell One-Liners.md",
     "Standalone Box Method.canvas",
+    "Definitions/What is Reverse Shell.md",
+    "imgs/windows-vs-linux.png",
     "Shell & upgrade/Intro.md",
+    "imgs/reverse_shell.png",
+    "Enumeration-stand-alone/Web enum.md",
+    "Standalone Linux Box Methodology/Linux Privilege Escalation/Decision Tree.md",
+    "Enumeration-stand-alone/nmap.md",
+    "Enumeration-stand-alone/Plan.md",
     "General-Enum-workflow.canvas",
+    "Definitions/Windows vs. Linux.md",
+    "Definitions/Linux-File-Permission.md",
+    "Definitions/Basic.md",
+    "Definitions",
+    "Defs/Windows vs. Linux.md",
+    "Defs/What is Reverse Shell.md",
+    "Defs/Linux-File-Permission.md",
+    "Defs/Basic.md",
+    "Defs",
     "Active Directory/Attack-Phases/Phase3-FOOTHOLD on MS01.md",
     "ActiveDirectory.canvas",
     "README.md",
@@ -243,33 +275,15 @@
     "Common CVEs & Exploits/ZeroLogon and noPac.md",
     "Common CVEs & Exploits/CVEs.md",
     "Common CVEs & Exploits/Intro.md",
-    "Shell & upgrade/Shell Upgrade — Linux TTY.md",
     "Common CVEs & Exploits",
-    "Shell & upgrade/Reverse Shell One-Liners.md",
-    "File Transfer/Linux → Linux.md",
+    "Definitions/File Transfer/Linux → Linux.md",
     "Shell & upgrade",
-    "File Transfer/Windows → Linux (Exfil).md",
-    "File Transfer/Linux → Windows.md",
-    "File Transfer/Intro.md",
-    "Password Attacks/Online Brute Force.md",
-    "File Transfer",
-    "Basic-Explanation/File Transfer.md",
-    "Password Attacks/NTLM Capture & Relay.md",
-    "Password Attacks/Hash Mode Reference.md",
-    "Password Attacks/Intro.md",
-    "Password Attacks",
-    "Active Directory/Pivoting-tunneling/SSH Tunneling.md",
-    "Active Directory/Pivoting-tunneling/Chisel.md",
-    "Active Directory/Pivoting-tunneling/Plink (Windows — no SSH client).md",
-    "Active Directory/Pivoting-tunneling/Ligolo-ng Double Pivot (MS01 → MS02 → MS03).md",
+    "Definitions/File Transfer",
+    "Definitions/Password Attacks",
     "Active Directory/Pivoting-tunneling",
     "Active Directory/MSSQL — RCE & Lateral Movement",
-    "Active Directory/Attack-Phases/Phase4-Pivot to MS02",
-    "Active Directory/Attack-Phases/Phase-2-3",
     "FlowChartSummary.canvas",
     "Untitled 1.canvas",
-    "imgs/windows-vs-linux.png",
-    "imgs/reverse_shell.png",
     "Pasted image 20260911194836.png"
   ]
 }
