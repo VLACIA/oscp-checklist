@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Common CVEs & Exploits/Searchsploit.md",
+                "file": "Active Directory/Attack-Phases/Phase4-Pivot to MS02/mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Searchsploit"
+              "title": "mitm6 — IPv6 DNS Takeover (Pre-Creds Initial Access)"
             }
           }
         ]
@@ -223,12 +223,13 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e5c1911aac73dba5",
+  "active": "fa25ed75bee48d94",
   "lastOpenFiles": [
+    "ActiveDirectory.canvas",
     "README.md",
+    "Common CVEs & Exploits/Searchsploit.md",
     "LICENSE",
     "Common CVEs & Exploits/ZeroLogon and noPac.md",
-    "Common CVEs & Exploits/Searchsploit.md",
     "Common CVEs & Exploits/CVEs.md",
     "Common CVEs & Exploits/Intro.md",
     "Shell & upgrade/Shell Upgrade — Linux TTY.md",
@@ -246,7 +247,6 @@
     "Password Attacks/NTLM Capture & Relay.md",
     "Password Attacks/Hash Mode Reference.md",
     "Password Attacks/Intro.md",
-    "ActiveDirectory.canvas",
     "Password Attacks",
     "Active Directory/Pivoting-tunneling/SSH Tunneling.md",
     "Active Directory/Pivoting-tunneling/Chisel.md",
@@ -257,7 +257,6 @@
     "Active Directory/MSSQL — RCE & Lateral Movement/MSSQL Attack Decision Tree.md",
     "Active Directory/Pivoting-tunneling",
     "Active Directory/MSSQL — RCE & Lateral Movement/Step 6 UNC Path Injection → Hash Capture.md",
-    "Active Directory/MSSQL — RCE & Lateral Movement/Step 5 Linked Server Lateral Movement.md",
     "Active Directory/MSSQL — RCE & Lateral Movement",
     "Active Directory/Attack-Phases/Phase4-Pivot to MS02",
     "Active Directory/Attack-Phases/Phase-2-3",
