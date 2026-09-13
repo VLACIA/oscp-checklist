@@ -11,17 +11,14 @@
             "id": "632721cecc5af707",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "PEN-200 OSCP Attack Methodology.canvas",
-                "viewState": {
-                  "x": 898.2733719027187,
-                  "y": 1608.1235235371591,
-                  "zoom": 0.4444442749023424
-                }
+                "file": "Enumeration-stand-alone/RDP enum.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "PEN-200 OSCP Attack Methodology"
+              "icon": "lucide-file",
+              "title": "RDP enum"
             }
           }
         ]
@@ -228,8 +225,10 @@
   },
   "active": "632721cecc5af707",
   "lastOpenFiles": [
-    "StandAloneBoxes/Standalone Linux Box Methodology/Plan-standalone-linux.md",
+    "OSCP Exam Attack Flow.canvas",
+    "StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Service Abuse.md",
     "PEN-200 OSCP Attack Methodology.canvas",
+    "StandAloneBoxes/Standalone Linux Box Methodology/Plan-standalone-linux.md",
     "StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi — UNION-Based.md",
     "StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi — Error-Based.md",
     "StandAloneBoxes/Standalone Linux Box Methodology/Linux Privilege Escalation/Manual Enumeration and Credential Hunting.md",
@@ -255,8 +254,6 @@
     "StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/Shellter.md",
     "StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/PowerShell Thread Injection.md",
     "StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/AV Evasion Workflow.md",
-    "StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/AV Detection and Testing.md",
-    "Definitions/Password attacks/Intro.md",
     "Standalone-Box.canvas",
     "ActiveDirectory.canvas",
     "Definitions/Password attacks",
