@@ -1,5 +1,6 @@
 tag:#enumeration 
 
+**Immediately after Nmap finds HTTP/HTTPS** on 80, 443, 8000, 8080, 8443, etc.
 
 ```
 # 1. Tech fingerprint

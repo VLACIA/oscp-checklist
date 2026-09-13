@@ -17,4 +17,18 @@
 | 3389      | RDP      | Check ms17-010, BlueKeep; use creds                              |
 | 5985      | WinRM    | evil-winrm -i <IP> -u user -p pass                               |
 | 8080/8443 | Alt-HTTP | Tomcat? Jenkins? Weblogic? check /manager                        |
-tag:#enumeration 
+
+### Service playbooks
+
+- [[FTP enum|FTP (21)]]
+- [[SSH enum|SSH (22)]]
+- [[SMTP enum|SMTP (25/465/587)]]
+- [[DNS enum|DNS (53 TCP/UDP)]]
+- [[RPC-NFS enum|RPC/NFS (111/2049)]]
+- [[Database enum|MySQL, MSSQL, PostgreSQL]]
+- [[RDP enum|RDP (3389)]]
+- [[WinRM enum|WinRM (5985/5986)]]
+- [[Additional services enum|VNC, Redis, and management interfaces]]
+
+For every open port, record: protocol, product/version, hostname or virtual host, unauthenticated exposure, authentication methods, credentials tested, files/data found, and the next evidence-driven action. Rescan services found on non-standard ports by protocol rather than by port number.
+tag:#enumeration
