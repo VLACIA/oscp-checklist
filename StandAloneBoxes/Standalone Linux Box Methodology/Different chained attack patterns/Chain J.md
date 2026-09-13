@@ -4,6 +4,9 @@
 
 ## Brief explanation
 
+See [[SQL Injection]] for the Chapter 10 manual SQLi workflow, including [[SQLi — Error-Based]], [[SQLi — UNION-Based]], blind SQLi, and `sqlmap`.
+
+
 1. **Confirm SQL injection:** User-controlled input in a login form or other parameter changes the structure of a backend SQL query because it is not safely parameterized.
 2. **Identify the database and privileges:** The route to operating-system access depends on the DBMS and on the compromised database account's permissions.
 3. **Reach OS execution:** On Microsoft SQL Server, a sufficiently privileged login may enable and invoke `xp_cmdshell`. On MySQL, a UDF-based route requires the ability to write a compatible library to the plugin directory and load it; file-write-to-webroot may be an alternative in some configurations.

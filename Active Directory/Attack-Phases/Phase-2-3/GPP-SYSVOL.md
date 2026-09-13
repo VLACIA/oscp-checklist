@@ -1,3 +1,6 @@
+> [!tip] Discovery
+> Enumerate shares and inspect SYSVOL first: [[Active Directory/PowerView & Manual AD Enumeration#10. Domain shares and SYSVOL|Domain shares and SYSVOL enumeration]].
+
  
 
 What & why

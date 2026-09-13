@@ -24,7 +24,7 @@ The Markdown files can also be read directly on GitHub, but Obsidian provides th
 | [Standalone Linux](Plan-standalone-linux.md) | Initial access, common web attack methods, attack chains, and Linux privilege escalation |
 | [Standalone Windows](Initial%20Access.md) | Windows footholds, credential dumping, token privileges, and privilege escalation |
 | [Active Directory](./Active%20Directory/intro.md) | Enumeration, footholds, credential attacks, AD CS, lateral movement, persistence, MSSQL, and pivoting |
-| [Password attacks](./Definitions/Password%20Attacks/Intro.md) | Hash identification, offline cracking, online brute force, NTLM capture, and relay |
+| [Password attacks](./Basics/Password%20Attacks/Intro.md) | Online attacks, cracking methodology/rules, KeePass and SSH-key cracking, NTLM/Net-NTLMv2, Pass-the-Hash, and relay |
 | [Common CVEs and exploits](./Common%20CVEs%20%26%20Exploits/Intro.md) | Exploit research, Searchsploit, and frequently encountered vulnerabilities |
 | [Shells and upgrades](./Shell%20%26%20upgrade/Intro.md) | Reverse-shell one-liners and Linux TTY upgrades |
 | [File transfer](./File%20Transfer/Intro.md) | Practical transfer and exfiltration commands across Linux and Windows |

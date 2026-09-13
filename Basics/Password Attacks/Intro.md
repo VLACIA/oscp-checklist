@@ -1,5 +1,38 @@
-**Systems never store your real password — they store a _hash_:** a scrambled, one-way fingerprint of it. "Cracking" means guessing passwords, hashing each guess, and checking if it matches the stolen hash. You're not reversing the hash; you're racing through millions of guesses.
+# Password Attacks — Decision Guide
 
-**Two situations, two approaches:** if you have a _stolen hash_ → crack it offline with `hashcat`/`john` (fast, silent, no lockouts). If you have a _login form / service_ and no hash → brute-force online with `hydra` (slower, noisy, can lock accounts — use sparingly).
+Passwords are commonly protected with hashes or encryption rather than stored as plaintext. **Cracking** means generating candidate passwords and comparing their resulting representation with the captured/stored value; a cryptographic hash is not simply "decrypted."
 
-**The first step is always identifying the hash type** so you pick the right hashcat mode. `rockyou.txt` is your go-to wordlist; for OSCP you rarely need anything fancier.
+## Choose the attack from the material you have
+
+```text
+live login service
+  → online dictionary attack / password spray
+  → noisy; check lockout and defensive controls first
+
+hash / protected credential file
+  → extract + format + crack offline
+  → no account lockout and no repeated network authentication
+
+NTLM hash
+  → crack (mode 1000) OR Pass-the-Hash when the service/tool supports it
+
+Net-NTLMv2 challenge-response
+  → crack (mode 5600) OR relay when the environment permits it
+```
+
+## PEN-200 cracking methodology
+
+1. **Extract** the hash or protected credential material.
+2. **Format** it for the cracking tool and identify the hash type (`hashid`, `hash-identifier`, `*2john` helpers).
+3. **Estimate feasibility**: cracking time is approximately `keyspace / hash rate`; `hashcat -b` benchmarks your hardware.
+4. **Prepare the wordlist**: prefer target-informed mutations/rules over blindly trying huge lists.
+5. **Attack the hash**, carefully verifying format and hash mode before spending time.
+
+See [[Basics/Password Attacks/Cracking Methodology and Rules|Cracking Methodology and Rules]] for the detailed checklist.
+
+## OSCP reminders
+
+- `rockyou.txt` is a useful baseline, but password policy and **human password patterns** should guide mutations.
+- Keep every recovered plaintext password: it may be useful for a controlled spray against other discovered accounts/services.
+- Keep NTLM and Net-NTLMv2 conceptually separate: an **NTLM hash** can be passed; a **Net-NTLMv2 challenge-response** is normally cracked or relayed.
+- If one cracking tool cannot handle a format/cipher, try another supported tool rather than assuming the credential material is unusable.

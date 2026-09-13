@@ -65,3 +65,39 @@ Opens a remote PowerShell session using an **NTLM hash instead of the plaintext 
 ## Quick Mental Model
 
 **MS17-010 = SMB vulnerability → Tomcat/WebDAV = upload + execute → WinRM = valid credentials/hash → shell**
+
+
+## Client-Side / User-Interaction Initial Access
+
+When the Windows client is internal/non-routable or exposed services do not provide the foothold, PEN-200 Chapter 11 adds a **user-interaction** path:
+
+```text
+recon user + OS + installed software
+        ↓
+[[StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Client-Side Attack Workflow|Client-Side Attack Workflow]]
+        ├─ [[StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Microsoft Office Macros|Microsoft Office Macros]]
+        └─ [[StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Windows Library-ms + LNK|Windows Library-ms → WebDAV → LNK]]
+        ↓
+reverse shell / Windows foothold
+```
+
+Treat this as an alternative **initial-access** route, not a replacement for network-service enumeration.
+
+
+## Payload blocked by Antivirus
+
+If a Windows payload is created/transferred correctly but the target AV blocks or quarantines it, branch into the Chapter 12 workflow instead of repeatedly regenerating random payloads:
+
+```text
+payload blocked / quarantined
+        ↓
+[[StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/AV Evasion Workflow|Antivirus Evasion Workflow]]
+        ├─ understand/test the target AV
+        ├─ on-disk or in-memory approach
+        ├─ PowerShell thread injection
+        └─ Shellter automated PE injection
+        ↓
+reverse shell / foothold
+```
+
+Remember: bypassing file-based AV detection does **not** guarantee the activity is invisible to EDR/behavioral monitoring.

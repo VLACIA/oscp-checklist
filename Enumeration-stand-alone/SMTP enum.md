@@ -17,3 +17,9 @@ For implicit TLS use `openssl s_client -connect <TARGET_IP>:465`; for STARTTLS u
 - Use `smtp-user-enum -M VRFY|RCPT|EXPN -U users.txt -t <TARGET_IP>` only when authorized and rate-limited.
 - Verify suspected users across other services and build a username list.
 - Test open relay only with a controlled sender and recipient you own; do not deliver mail to third parties.
+
+## PEN-200 response-difference idea
+
+A valid and invalid `VRFY` request may produce visibly different SMTP response codes/messages. This can be automated to build a valid username list when the server permits enumeration.
+
+From a Windows-only host, see [[Enumeration-stand-alone/Windows LOTL Enumeration|Windows LOTL Enumeration]] for `Test-NetConnection` and Telnet-based SMTP interaction.

