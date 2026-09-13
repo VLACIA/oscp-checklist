@@ -8,20 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "37a76ef0bb9300a2",
+            "id": "447ef37d305670e6",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
                 "file": "Standalone-Box.canvas",
                 "viewState": {
-                  "x": -3301.1991779360433,
-                  "y": 970.6932026794309,
-                  "zoom": -0.9999998474121091
+                  "x": -1966.1200038590414,
+                  "y": 2144.4566331467904,
+                  "zoom": -2.11111099243164
                 }
               },
-              "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "Standalone-Box"
             }
@@ -228,10 +226,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "37a76ef0bb9300a2",
+  "active": "447ef37d305670e6",
   "lastOpenFiles": [
-    "Basics/Shell & upgrade/Intro.md",
     "Standalone-Box.canvas",
+    "Standalone-Box.canvas",
+    "StandAloneBoxes/Standalone Win Box Methodology/Initial Access.md",
+    "StandAloneBoxes/Standalone Linux Box Methodology/Plan-standalone-linux.md",
+    "StandAloneBoxes/Standalone Linux Box Methodology/Different chained attack patterns/Chain I.md",
+    "Basics/Shell & upgrade/Intro.md",
     "Definitions/Password attacks/Intro.md",
     "Definitions/Password attacks",
     "Definitions",
@@ -256,9 +258,6 @@
     "Basics/Password Attacks/Hash Mode Reference.md",
     "Basics/File Transfer/Linux → Windows.md",
     "Basics/File Transfer/Intro.md",
-    "Basics/File Transfer/Linux → Linux.md",
-    "Basics/Common CVEs & Exploits/CVEs.md",
-    "Basics/Common CVEs & Exploits/Searchsploit.md",
     "Basics/Shell & upgrade",
     "Basics/Password Attacks",
     "Basics/File Transfer",
