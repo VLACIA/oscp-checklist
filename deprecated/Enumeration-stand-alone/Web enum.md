@@ -36,25 +36,26 @@ whatweb http://<TARGET_IP> -v
 curl -I http://<TARGET_IP>
 nikto -h http://<TARGET_IP> -output nikto.txt &
 
-# 2. Directory brute force
-gobuster dir -u http://<TARGET_IP> \
-    -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-big.txt \
+# 2. Directory brute force, Its purpose is to discover **hidden #directories/files**, such as `/admin`, `/uploads`, `/backup`, `config.php`, or #old `.txt` files.
+
+gobuster dir -u http://192.168.219.132 \
+    -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-big.txt \
     -x php,html,txt,asp,aspx,jsp -t 50 -o gobuster.txt
 
-feroxbuster -u http://<TARGET_IP> \
-    -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt \
+feroxbuster -u http://192.168.219.132 \
+    -w /usr/share/seclists/Discovery/Web-Content/DirBuster-2007_directory-list-2.3-medium.txt \
     -x php,html,txt,aspx -t 100 --depth 3 -o ferox.txt
 
 # 3. Always manually check:
-curl http://<TARGET_IP>/robots.txt
-curl http://<TARGET_IP>/.git/HEAD
-curl http://<TARGET_IP>/.env
-curl http://<TARGET_IP>/backup/
-curl http://<TARGET_IP>/config.php
-view-source:http://<TARGET_IP>/           # HTML comments!
+curl http://192.168.219.132/robots.txt
+curl http://192.168.219.132/.git/HEAD
+curl http://192.168.219.132/.env
+curl http://192.168.219.132/backup/
+curl http://192.168.219.132/config.php
+view-source:http://192.168.219.132/           # HTML comments!
 
 # 4. VHost enumeration:
-gobuster vhost -u http://<DOMAIN> \
+gobuster vhost -u http://192.168.219.132 \
     -w /usr/share/seclists/Discovery/DNS/subdomains-top1million-5000.txt \
     --append-domain -t 50 -o vhosts.txt
 

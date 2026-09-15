@@ -10,21 +10,52 @@
           {
             "id": "632721cecc5af707",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "canvas",
               "state": {
                 "file": "OSCP Exam Attack Flow.canvas",
                 "viewState": {
-                  "x": -1287.7084656318386,
-                  "y": -2010.7199131912841,
-                  "zoom": -0.8888890075683608
+                  "x": 943.9584526830379,
+                  "y": -3117.487685491386,
+                  "zoom": -1.0172526143659155e-7
                 }
               },
+              "pinned": true,
               "icon": "lucide-layout-dashboard",
               "title": "OSCP Exam Attack Flow"
             }
+          },
+          {
+            "id": "99b58e2cd421e646",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Enumeration-stand-alone/nmap.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "nmap"
+            }
+          },
+          {
+            "id": "4752ffbebec989cf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "summary/6_Information_Gathering.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "6_Information_Gathering"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -86,7 +117,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 338.5
+    "width": 581.5
   },
   "right": {
     "id": "b476833009299ce4",
@@ -226,56 +257,56 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "e5c1911aac73dba5",
+  "active": "4752ffbebec989cf",
   "lastOpenFiles": [
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Service Abuse.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Enumeration and Sensitive Information.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Scheduled Tasks and Exploits.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Token Priviledge.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Plan.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Dump Credentials (Windows Post-Exploitation).md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Windows Library-ms + LNK.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Client-Side Attack Workflow.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Microsoft Office Macros.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/Shellter.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/PowerShell Thread Injection.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/AV Detection and Testing.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/AV Evasion Workflow.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SSTI — Server-Side Template Injection.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SSTI ΓÇö Server-Side Template Injection.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi — UNION-Based.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi — Error-Based.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi ΓÇö UNION-Based.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi ΓÇö Error-Based.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQL Injection.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/LFI-Local File Inclusion.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/MySQL UDF RCE (root creds + FILE priv).md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed → Credential Chain.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed ΓåÆ Credential Chain.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/File Upload Bypass.md",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/Exiftool — Metadata → Usernames.md",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Linux Privilege Escalation",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Different chained attack patterns",
+    "deprecated/Active Directory/Attack-Phases/Phase4-Pivot to MS02",
+    "deprecated/Active Directory/Attack-Phases/Phase-2-3",
+    "deprecated/StandAloneBoxes/Standalone Win Box Methodology",
+    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology",
+    "deprecated/PEN-200 OSCP Attack Methodology.canvas",
+    "deprecated/OSCP Exam Attack Flow.canvas",
+    "PEN200_OSCP_Attack_Process.canvas",
     "OSCP Exam Attack Flow.canvas",
-    "Enumeration-stand-alone/RDP enum.md",
-    "OSCP Exam Attack Flow.canvas",
-    "StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Service Abuse.md",
     "PEN-200 OSCP Attack Methodology.canvas",
-    "StandAloneBoxes/Standalone Linux Box Methodology/Plan-standalone-linux.md",
-    "StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi — UNION-Based.md",
-    "StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi — Error-Based.md",
-    "StandAloneBoxes/Standalone Linux Box Methodology/Linux Privilege Escalation/Manual Enumeration and Credential Hunting.md",
-    "Methodology/Assembling the Pieces — End-to-End OSCP Attack Chain.md",
-    "Methodology",
-    "Basics/Metasploit/Intro & Module Workflow.md",
-    "Basics/Metasploit/Payloads - msfvenom - multi-handler.md",
-    "Basics/Metasploit/Meterpreter & Post-Exploitation.md",
-    "Basics/Metasploit/Metasploit Pivoting.md",
-    "Basics/Metasploit",
-    "Active Directory/Pivoting-tunneling/sshuttle.md",
-    "Active Directory/Pivoting-tunneling/Socat.md",
-    "Active Directory/Pivoting-tunneling/Netsh (Windows native port forwarding).md",
-    "Active Directory/Pivoting-tunneling/DNS Tunneling - dnscat2.md",
-    "Active Directory/Attack-Phases/Phase4-Pivot to MS02/NTDS.dit via VSS Shadow Copy.md",
-    "Active Directory/Attack-Phases/Phase4-Pivot to MS02/AD Lateral Movement — WMI, WinRM, PsExec & DCOM.md",
-    "Active Directory/Attack-Phases/Phase-2-3/AD Password Spraying.md",
-    "Active Directory/SharpHound & BloodHound.md",
-    "Active Directory/PowerView & Manual AD Enumeration.md",
-    "Active Directory/AD Authentication — NTLM, Kerberos & LSASS.md",
-    "StandAloneBoxes/Standalone Win Box Methodology/Initial Access.md",
-    "StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks/Client-Side Attack Workflow.md",
-    "StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/Shellter.md",
-    "StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion/PowerShell Thread Injection.md",
     "Standalone-Box.canvas",
     "ActiveDirectory.canvas",
-    "Definitions/Password attacks",
-    "Definitions",
     "File Transfer.canvas",
-    "Basics/Shell & upgrade",
-    "Basics/Password Attacks",
-    "Basics/File Transfer",
-    "Basics/Common CVEs & Exploits",
-    "Basics",
-    "Definitions/File Transfer",
     "Common CVEs & Exploits.canvas",
     "imgs/windows-vs-linux.png",
     "Password Attacks.canvas",
     "imgs/reverse_shell.png",
-    "General-Enum-workflow.canvas",
-    "FlowChartSummary.canvas",
-    "Untitled 1.canvas",
     "Pasted image 20260911194836.png"
   ]
 }
