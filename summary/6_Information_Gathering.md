@@ -77,29 +77,6 @@ Initial Access -> Privilege Escalation -> Credentials -> Pivoting -> AD -> Proof
 
 # 6.1 The Penetration Testing Lifecycle
 
-The chapter starts by placing information gathering inside the full penetration-testing lifecycle. A typical engagement includes:
-
-1. Defining the scope
-2. Information gathering
-3. Vulnerability detection
-4. Initial foothold
-5. Privilege escalation
-6. Lateral movement
-7. Reporting/analysis
-8. Lessons learned/remediation
-
-**Scope matters first.** It determines which IP ranges, hosts, and applications are allowed to be tested. Do not assume that an adjacent host, domain, or network is in scope simply because you discover it.
-
-**Information gathering is continuous.** Initial reconnaissance gives you the first map of the attack surface, but enumeration continues after gaining a foothold and during lateral movement. A new internal hostname, credential, subnet, or service can restart the same discovery process from a new position.
-
-### Passive vs. active
-
-| Type | Direct interaction with target? | Main benefit | Main cost/risk |
-|---|---|---|---|
-| Passive | None or minimal normal-user interaction | Low visibility; builds target picture before probing | May be incomplete or stale |
-| Active | Yes | More accurate and detailed service/host data | Generates traffic and may be logged/detected |
-
-### OSCP takeaway
 
 Treat your notes as a growing attack-surface database. For each host, track at minimum:
 
@@ -124,17 +101,6 @@ What has already been tested
 
 Passive information gathering (OSINT) collects publicly available information before aggressively interacting with the target.
 
-The chapter describes two interpretations:
-
-- **Strict passive:** never communicate directly with target systems; rely on third-party sources.
-- **Looser passive:** interact only as an ordinary user would (for example, browsing a public site or registering normally), but do not test vulnerabilities yet.
-
-PEN-200 uses the looser interpretation.
-
-The important concept is that passive recon is **cyclical rather than linear**. One discovery feeds another tool. A person's name can lead to an email address; an email/domain can lead to source repositories; repositories can reveal technologies or credentials; a hostname can lead to Shodan results; and those results can prioritize active scans.
-
-The chapter's example emphasizes that seemingly minor employee or infrastructure information can eventually enable an initial foothold. For OSCP-style machines, the equivalent lesson is: **do not discard small clues.**
-
 ---
 
 # 6.2.1 Whois Enumeration
@@ -153,13 +119,13 @@ WHOIS provides registration and ownership information for domain names and IP ra
 ### Domain lookup
 
 ```bash
-whois megacorpone.com -h 192.168.50.251
+whois megacorpone.com -h 192.168.50.251 
 ```
 
 **Arguments**
 
 - `megacorpone.com` - domain being queried.
-- `-h 192.168.50.251` - send the query to this specific WHOIS server (`-h` = host).
+- `-h 192.168.50.251` -arbitrary, send the query to this specific WHOIS server (`-h` = host). Fixed value!
 
 **Why/when to use it**
 
@@ -244,7 +210,7 @@ A portal with pre-built dorks and a query builder.
 
 # 6.2.3 Netcraft
 
-## Tool/service: Netcraft
+## Tool/service: Netcraft (website)
 
 Netcraft is a third-party web service that can provide information such as:
 
@@ -661,7 +627,7 @@ Nmap is the chapter's primary port scanner and service-enumeration framework. So
 
 ## Measuring scan traffic with `iptables`
 
-The chapter deliberately measures how much traffic different Nmap scans create.
+The chapter deliberately measures how much traffic different Nmap scans create. iptables -L shows traffic rules.
 
 ### Insert rules to count target traffic
 
@@ -1379,9 +1345,6 @@ Chapter 6 lives mainly in **Recon + Enumeration**, but its output is what drives
 
 # Mini cheat sheet - beside-the-machine version
 
-> [!tip] Suggested 18-line OSCP scratchpad
-> These are the Chapter 6 commands/reminders most worth keeping visible while solving a machine. Replace placeholders with the target values.
-
 ```bash
 # 1) Quick/default TCP scan
 nmap <IP>
@@ -1441,16 +1404,6 @@ snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.25.4.2.1.2
 snmpwalk -c public -v1 <IP> 1.3.6.1.2.1.6.13.1.3
 ```
 
-### Reminders that matter more than another command
-
-- **Every port is a question:** what service, version, auth method, files/data, and known misconfiguration exist here?
-- **High ports matter.** Always complete a full TCP scan.
-- **UDP matters.** At minimum think DNS/53, SNMP/161, NTP/123 and whatever the scan reveals.
-- **Names matter.** Hostnames and domain names often reveal roles and are essential for virtual hosts and AD.
-- **Users are reusable data.** Any username from SMTP/SNMP/SMB/repositories goes into a master username list.
-- **New network position = new recon.** After foothold/pivot, enumerate again from inside.
-- **Scanner output is evidence, not truth.** Verify versions, OS guesses, and service banners when they affect your attack decision.
-
 ---
 
 # Exam-oriented mental workflow
@@ -1495,4 +1448,45 @@ AFTER FOOTHOLD:
 
 # Final chapter takeaway
 
-Chapter 6 is the foundation of the OSCP process because exploitation quality depends on enumeration quality. The objective is not simply to "run Nmap." The objective is to **build and continuously refine a model of the target**: hosts, names, services, versions, users, credentials, relationships, and reachable network paths. The best next action should be determined by what the previous enumeration step taught you.
+```
+# Setup workspace
+mkdir -p ~/exam/{ad,box1,box2,box3}/{scans,loot,exploits,screenshots}
+
+# Parallel quick scans on ALL targets:
+for ip in <MS01_IP> <MS02_IP> <DC_IP> <BOX1_IP> <BOX2_IP> <BOX3_IP>; do
+    nmap -sV --open -T4 $ip -oN ~/exam/scans/quick_$ip.txt &
+done; wait
+
+- `-sV` → detect service/version information
+- `--open` → only display open ports
+- `-T4` → faster/aggressive scan timing
+  
+# Full TCP per machine:
+nmap -p- -sV -sC --open -T4 <TARGET_IP> -oN full_tcp.txt
+
+- `-sC` → run Nmap's default NSE scripts
+  
+# UDP top 20 — DON'T SKIP (SNMP/TFTP/DNS often critical):
+nmap -sU --top-ports 20 <TARGET_IP> -oN udp.txt
+```
+
+# OSCP Enumeration Phases and Tools
+
+| Phase                                        | Sample Tool            | Example                                         | What You Want                                          |
+| -------------------------------------------- | ---------------------- | ----------------------------------------------- | ------------------------------------------------------ |
+| **1. Quick TCP scan**                        | `nmap`                 | `nmap <IP>`                                     | Quickly find common open TCP ports                     |
+| **2. Full TCP scan**                         | `nmap`                 | `nmap -p- <IP>`                                 | Find services on unusual/high ports                    |
+| **3. Service/version detection**             | `nmap`                 | `nmap -sV -p <ports> <IP>`                      | Exact service/product/version                          |
+| **4. UDP scan**                              | `nmap`                 | `sudo nmap -sU --top-ports 20 <IP>`             | Find UDP services such as SNMP/DNS                     |
+| **5. DNS / hostname discovered**             | `host`                 | `host server.domain.local`                      | Resolve hostname → IP                                  |
+| **6. DNS deeper enumeration**                | `dnsrecon`             | `dnsrecon -d domain.com -t std`                 | Records, hosts, DNS information                        |
+| **7. SMB 139/445**                           | Nmap NSE               | `nmap -p139,445 --script smb-os-discovery <IP>` | Computer/domain/forest/OS clues                        |
+| **8. NetBIOS discovery**                     | `nbtscan`              | `sudo nbtscan -r <subnet>`                      | Windows/NetBIOS hostnames                              |
+| **9. SMTP 25**                               | `nc`                   | `nc -nv <IP> 25`                                | Banner + manually try `VRFY user`                      |
+| **10. SNMP 161/UDP**                         | `onesixtyone`          | `onesixtyone -c community -i ips`               | Find valid SNMP community string                       |
+| **11. SNMP deep enumeration**                | `snmpwalk`             | `snmpwalk -c public -v1 <IP>`                   | Users, processes, software, ports                      |
+| **12. Vulnerability research**               | Start with `nmap -sV`  | `nmap -sV -p <ports> <IP>`                      | Get accurate version first, then research that version |
+| **13. After foothold — DNS**                 | `nslookup`             | `nslookup hostname`                             | Discover internal hosts/DNS                            |
+| **14. After foothold — port test (windows)** | `Test-NetConnection`   | `Test-NetConnection -Port 445 <IP>`             | Test whether an internal TCP service is reachable      |
+| **15. After foothold — SMB (windows)**       | `net view`             | `net view \\dc01 /all`                          | Discover Windows shares                                |
+| **16. Internal port scan**                   | PowerShell `TcpClient` | `1..1024 \| % {...TcpClient...}`                | Scan internally when Nmap isn't available              |

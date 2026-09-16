@@ -8,54 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "632721cecc5af707",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "canvas",
-              "state": {
-                "file": "OSCP Exam Attack Flow.canvas",
-                "viewState": {
-                  "x": 943.9584526830379,
-                  "y": -3117.487685491386,
-                  "zoom": -1.0172526143659155e-7
-                }
-              },
-              "pinned": true,
-              "icon": "lucide-layout-dashboard",
-              "title": "OSCP Exam Attack Flow"
-            }
-          },
-          {
-            "id": "99b58e2cd421e646",
+            "id": "1033f6d246c354f4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Enumeration-stand-alone/nmap.md",
+                "file": "summary/07_Vulnerability_Scanning_Obsidian_Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "nmap"
-            }
-          },
-          {
-            "id": "4752ffbebec989cf",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "summary/6_Information_Gathering.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "6_Information_Gathering"
+              "title": "07_Vulnerability_Scanning_Obsidian_Summary"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -257,8 +223,11 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "4752ffbebec989cf",
+  "active": "1033f6d246c354f4",
   "lastOpenFiles": [
+    "summary/6_Information_Gathering.md",
+    "summary/07_Vulnerability_Scanning_Obsidian_Summary.md",
+    "PEN200_OSCP_Attack_Process.canvas",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Service Abuse.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Enumeration and Sensitive Information.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Scheduled Tasks and Exploits.md",
@@ -283,8 +252,6 @@
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/MySQL UDF RCE (root creds + FILE priv).md",
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed → Credential Chain.md",
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed ΓåÆ Credential Chain.md",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/File Upload Bypass.md",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/Exiftool — Metadata → Usernames.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion",
@@ -297,7 +264,6 @@
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology",
     "deprecated/PEN-200 OSCP Attack Methodology.canvas",
     "deprecated/OSCP Exam Attack Flow.canvas",
-    "PEN200_OSCP_Attack_Process.canvas",
     "OSCP Exam Attack Flow.canvas",
     "PEN-200 OSCP Attack Methodology.canvas",
     "Standalone-Box.canvas",
