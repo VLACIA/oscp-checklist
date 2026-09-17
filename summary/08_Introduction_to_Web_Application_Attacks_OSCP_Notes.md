@@ -130,7 +130,7 @@ To identify the HTTP server and possibly its version. The chapter's example reve
 
 That gives you both a server product and an OS clue.
 
-### HTTP enumeration with an NSE script
+### ==HTTP enumeration with an NSE script==
 
 ```bash
 sudo nmap -p80 --script=http-enum 192.168.50.20
@@ -164,6 +164,10 @@ These are leads for deeper manual inspection.
 ## 8.2.2 Technology Stack Identification with Wappalyzer
 
 **Wappalyzer** performs technology fingerprinting against a web application.
+
+```bash
+wappalyzer https://example.com
+```
 
 The chapter uses it to identify components such as:
 
@@ -547,7 +551,7 @@ Open:
 Web Developer Tools → Network
 ```
 
-Then refresh the page because the Network panel records activity after it is opened.
+==Then refresh the page because the Network panel records activity after it is opened.==
 
 Inspect requests and responses, especially headers.
 
@@ -732,7 +736,7 @@ The response says the user was not found even though the HTTP status is shown as
 
 ---
 
-### POST JSON to the login API
+### ==POST JSON to the login API==
 
 ```bash
 curl -d '{"password":"fake","username":"admin"}' \
@@ -870,7 +874,7 @@ Enumerate API
 → verify admin login
 ```
 
-This is an excellent OSCP lesson: the vulnerability is not necessarily a known CVE. It is an **application logic flaw** discovered by understanding the API.
+==This is an excellent OSCP lesson: the vulnerability is not necessarily a known CVE. It is an **application logic flaw** discovered by understanding the API.==
 
 ---
 
@@ -1138,7 +1142,7 @@ attacker-controlled User-Agent
 → browser executes injected script
 ```
 
-### Proof-of-concept payload
+### ==Proof-of-concept payload==
 
 ```html
 <script>alert(42)</script>
@@ -1328,7 +1332,7 @@ Why encode it:
 
 ---
 
-### Decode and execute the encoded JavaScript
+### ==Decode and execute the encoded JavaScript==
 
 The chapter then uses:
 
@@ -1727,6 +1731,19 @@ Decode/execute:
 eval(String.fromCharCode(...))
 ```
 
+The attack chain would be like this:
+Stored XSS
+   ↓
+Admin visits affected page
+   ↓
+Attacker's JavaScript executes as that site
+   ↓
+Steals/extracts required nonce
+   ↓
+Uses admin's authenticated session
+   ↓
+Creates attacker-controlled admin account
+
 ---
 
 # Attack chain connection
@@ -1833,13 +1850,15 @@ This is not yet Linux/Windows local privilege escalation, but it may create the 
 
 ## Credentials
 
-Credentials appear in several ways:
+==Credentials appear in several ways:==
 
-- username enumeration from `/users/v1`
-- password testing with Burp Intruder
-- password replacement through the API
-- JWT/auth-token collection
-- potential cookie/session theft when protections are weak
+- ==username enumeration from `/users/v1`==
+	- curl -s http://target/wp-json/wp/v2/users | jq
+	- admin can be vaild user
+- ==password testing with Burp Intruder==
+- ==password replacement through the API==
+- ==JWT/auth-token collection==
+- ==potential cookie/session theft when protections are weak==
 
 Ask:
 
@@ -1853,38 +1872,6 @@ Did this web bug expose:
 ```
 
 Anything reusable should feed into later service enumeration.
-
----
-
-## Pivoting
-
-Chapter 8 does not directly teach network pivoting, but a compromised web application can become the **entry point** from which pivoting becomes possible later.
-
-Potential transition:
-
-```text
-web admin
-→ server-side code execution / web shell
-→ OS shell
-→ internal network access
-→ pivot
-```
-
----
-
-## Active Directory
-
-AD is not directly covered in Chapter 8.
-
-However, web compromise can provide:
-
-- domain usernames
-- passwords
-- service-account credentials
-- access to an internal Windows host
-- a foothold from which AD enumeration becomes possible
-
-Treat web findings as possible input to the later AD phase.
 
 ---
 
@@ -1968,7 +1955,7 @@ shell/proof file if host access is obtained
     405 Method Not Allowed = route probably exists; test another method.
     ```
 
-11. **Send curl through Burp**
+11. ==**Send curl through Burp**==
     ```bash
     curl --proxy 127.0.0.1:8080 http://<HOST>/
     ```
@@ -2021,24 +2008,3 @@ shell/proof file if host access is obtained
     ```
 
 ---
-
-# Exam mindset from this chapter
-
-When you find a web service, avoid jumping immediately to public exploits. Use a repeatable sequence:
-
-```text
-1. Fingerprint
-2. Discover content
-3. Proxy traffic
-4. Inspect source + headers + cookies
-5. Enumerate APIs
-6. Learn request formats from errors
-7. Modify parameters and methods
-8. Test authorization/business logic
-9. Probe injection points
-10. Verify impact
-11. Convert app-level access into a host foothold
-```
-
-The key skill Chapter 8 is teaching is **understanding the application well enough to create your own attack path**.
-

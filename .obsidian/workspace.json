@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "summary/07_Vulnerability_Scanning_Obsidian_Summary.md",
+                "file": "summary/09_Common_Web_Application_Attacks_Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "07_Vulnerability_Scanning_Obsidian_Summary"
+              "title": "09_Common_Web_Application_Attacks_Summary"
             }
           }
         ]
@@ -83,7 +83,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 581.5
+    "width": 397.7578125
   },
   "right": {
     "id": "b476833009299ce4",
@@ -225,8 +225,9 @@
   },
   "active": "1033f6d246c354f4",
   "lastOpenFiles": [
-    "summary/6_Information_Gathering.md",
+    "summary/08_Introduction_to_Web_Application_Attacks_OSCP_Notes.md",
     "summary/07_Vulnerability_Scanning_Obsidian_Summary.md",
+    "summary/6_Information_Gathering.md",
     "PEN200_OSCP_Attack_Process.canvas",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Service Abuse.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Enumeration and Sensitive Information.md",
@@ -251,7 +252,6 @@
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/LFI-Local File Inclusion.md",
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/MySQL UDF RCE (root creds + FILE priv).md",
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed → Credential Chain.md",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed ΓåÆ Credential Chain.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion",
