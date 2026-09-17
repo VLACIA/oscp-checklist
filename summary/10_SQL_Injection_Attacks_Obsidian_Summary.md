@@ -20,21 +20,7 @@ source: "PEN-200 Chapter 10 — SQL Injection Attacks"
 > [!summary] Chapter goal
 > Understand how SQL injection happens, manually identify and exploit error-based, UNION-based, and blind SQL injection, enumerate MySQL/MSSQL databases, turn SQL access into command execution where permissions allow, and automate exploitation with `sqlmap`.
 
-## Attack-chain position
-
-`Recon → Enumeration → Initial Access → Privilege Escalation → Credentials → Pivoting → AD → Proof`
-
-**Where this chapter fits:**
-
-- **Recon:** Identify a web application or exposed database service that accepts user-controlled input.
-- **Enumeration:** Fingerprint the DBMS/version/user, enumerate databases, tables, columns, and application data.
-- **Initial Access:** SQLi can bypass authentication or, when the DBMS/filesystem permissions allow it, produce OS command execution through `xp_cmdshell`, a written webshell, or `sqlmap --os-shell`.
-- **Privilege Escalation:** SQLi itself does not automatically mean OS privilege escalation. The chapter demonstrates command execution in the context of the MSSQL service account or Linux web-server user, after which normal privilege-escalation methodology applies.
-- **Credentials:** A major SQLi objective is extracting usernames, password hashes, or clear-text application/database credentials for later reuse.
-- **Pivoting:** Credentials or shell access obtained through SQLi may become the starting point for accessing additional hosts, but pivoting is not taught in this chapter.
-- **AD:** If recovered credentials are valid in a Windows/domain environment, they may feed into later AD attacks; AD exploitation itself is outside this chapter.
-- **Proof:** Record the vulnerable parameter/payload, extracted data, and command execution (`whoami`, `id`, etc.) as evidence of impact.
-
+## Attack-chain positio
 ---
 
 # 10.1 SQL Theory and Databases

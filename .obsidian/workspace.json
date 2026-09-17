@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "summary/09_Common_Web_Application_Attacks_Summary.md",
+                "file": "summary/10_SQL_Injection_Attacks_Obsidian_Summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09_Common_Web_Application_Attacks_Summary"
+              "title": "10_SQL_Injection_Attacks_Obsidian_Summary"
             }
           }
         ]
@@ -225,10 +225,15 @@
   },
   "active": "1033f6d246c354f4",
   "lastOpenFiles": [
+    "PEN200_OSCP_Attack_Process.canvas",
+    "summary/10_SQL_Injection_Attacks_Obsidian_Summary.md",
+    "Untitled.base",
+    "Untitled 1.canvas",
+    "Untitled.canvas",
+    "summary/09_Common_Web_Application_Attacks_Summary.md",
     "summary/08_Introduction_to_Web_Application_Attacks_OSCP_Notes.md",
     "summary/07_Vulnerability_Scanning_Obsidian_Summary.md",
     "summary/6_Information_Gathering.md",
-    "PEN200_OSCP_Attack_Process.canvas",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Service Abuse.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Windows Enumeration and Sensitive Information.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation/Scheduled Tasks and Exploits.md",
@@ -249,9 +254,6 @@
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi ΓÇö UNION-Based.md",
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQLi ΓÇö Error-Based.md",
     "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/SQL Injection.md",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/LFI-Local File Inclusion.md",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/MySQL UDF RCE (root creds + FILE priv).md",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology/Web-attacks-Methods/git Exposed → Credential Chain.md",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Priviledge Escalation",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Client-Side Attacks",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology/Antivirus Evasion",
@@ -261,7 +263,6 @@
     "deprecated/Active Directory/Attack-Phases/Phase4-Pivot to MS02",
     "deprecated/Active Directory/Attack-Phases/Phase-2-3",
     "deprecated/StandAloneBoxes/Standalone Win Box Methodology",
-    "deprecated/StandAloneBoxes/Standalone Linux Box Methodology",
     "deprecated/PEN-200 OSCP Attack Methodology.canvas",
     "deprecated/OSCP Exam Attack Flow.canvas",
     "OSCP Exam Attack Flow.canvas",
@@ -269,9 +270,7 @@
     "Standalone-Box.canvas",
     "ActiveDirectory.canvas",
     "File Transfer.canvas",
-    "Common CVEs & Exploits.canvas",
     "imgs/windows-vs-linux.png",
-    "Password Attacks.canvas",
     "imgs/reverse_shell.png",
     "Pasted image 20260911194836.png"
   ]

